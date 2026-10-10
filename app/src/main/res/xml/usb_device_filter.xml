@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Vendor/Product IDs of the USB-serial bridges that are commonly used by
+  Type-C -> RS485 / RS485-OTG adapter boards.  Listing them here lets Android
+  launch the app automatically when the adapter is plugged in.
+-->
+<resources>
+    <!-- WCH / QinHeng: CH340, CH341, CH9102, CH9101 -->
+    <usb-device vendor-id="6790" product-id="29987" />
+    <usb-device vendor-id="6790" product-id="21795" />
+    <usb-device vendor-id="6790" product-id="21972" />
+    <usb-device vendor-id="6790" product-id="21968" />
+
+    <!-- Silicon Labs CP2102 / CP2105 / CP2108 / CP2110 -->
+    <usb-device vendor-id="4292" product-id="60000" />
+    <usb-device vendor-id="4292" product-id="60016" />
+    <usb-device vendor-id="4292" product-id="60017" />
+
+    <!-- FTDI FT232 / FT2232 / FT4232 / FT231X -->
+    <usb-device vendor-id="1027" product-id="24577" />
+    <usb-device vendor-id="1027" product-id="24592" />
+    <usb-device vendor-id="1027" product-id="24593" />
+    <usb-device vendor-id="1027" product-id="24596" />
+    <usb-device vendor-id="1027" product-id="24597" />
+
+    <!-- Prolific PL2303 -->
+    <usb-device vendor-id="1659" product-id="8963" />
+    <usb-device vendor-id="1659" product-id="9123" />
+
+    <!-- Microchip MCP2200 / CDC-ACM demo boards -->
+    <usb-device vendor-id="1240" product-id="22336" />
+    <usb-device class="2" subclass="0" protocol="0" />
+</resources>
