@@ -95,7 +95,6 @@ class SerialLink(private val context: Context) {
                 parityConstant(portConfig.parity)
             )
             runCatching { p.flowControl = flowControlConstant(portConfig.flowControl) }
-            runCatching { p.setReadQueue(4, 16 * 1024) }
             if (portConfig.rtsForDirection) {
                 // Idle in receive mode; the writer flips RTS around every burst.
                 p.rts = false
